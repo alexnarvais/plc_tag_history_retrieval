@@ -67,5 +67,5 @@ ___
 
 
 ### Program Setup and Execution
-> 1. Copy the latest modules and README files from the PEMO GitHub Repository 
+> 1. Copy the latest modules and README files from the Site-Automation GitHub Repository 
 > 6. Run the main.py from the virtual environment shell using the following command `python -m main`
