@@ -70,4 +70,4 @@ ___
 > 1. Copy the latest Python Modules and README file from the Site-Automation GitHub Repository. [PLC Tag History Retrieval](https://github.com/Site-Automation/plc_tag_history_retrieval)
 > 2. Change the variable names in the main.py file to fit the project and any other recommend changes are documented in the main.py file.
 > 3. Run the main.py from the virtual environment shell using the following command `python -m main` or from PyCharm by pressing the run button. 
-> 4. If any changes are made to the main.py or plc_history.py files update the README and commit a 
+> 4. If any changes are made to the main.py or plc_history.py files update the README and commit changes to the repository.
