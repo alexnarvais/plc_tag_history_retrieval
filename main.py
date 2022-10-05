@@ -24,6 +24,7 @@ if __name__ == '__main__':
     The min_row and max_row values should be the same since there will be only one row of tag names.
     The min_col value (start tag) shouldn't change and max_col value (end tag) will always be changed based on the PLC.
     """
+
     min_row = 12
     max_row = 12
     min_col = 2
