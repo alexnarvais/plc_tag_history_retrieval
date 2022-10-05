@@ -55,16 +55,16 @@ class PlcHistory:
 
     def plc_tag_values(self, tags_list):
         """PLC Ethernet/IP Connection
-
+        
         Open a connection to the specified PLC from the ipv4 address set in the excel spreadsheet.
         If the connection is successful, use the tag name list returned from the plc_tags_names() function and start
         determining what operation to perform on that tag based on if it's a plc tag array of values or epoch times.
         Once the type of plc tag is determined, get each element in the data array and parse the value or epoch time.
-        Create a nested list (plc_tag_value_list) of values for each tag. (lines 68 and 72)
+        Create a nested list (plc_tag_value_list) of values for each tag.
         Return a nested list that is created by unpacking each element related position in the previous nested list (plc_tag_value_list).
         For example a nested list is created that gives every element[0] in a nested list.
-
-         https://github.com/ottowayi/pycomm3
+         
+        https://github.com/ottowayi/pycomm3
         """
 
         ipv4_address = self._work_book[self._work_sheet]['C5'].value
