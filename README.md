@@ -71,4 +71,5 @@ ___
 > 2. Change the variable names in the main.py file to fit the project and any other recommend changes are documented in the main.py file.
 > 3. Run the main.py from the virtual environment shell using the following command `python -m main` or from PyCharm by pressing the run button.
 > 4. If any changes are made to the main.py or plc_history.py files update the README and commit the changes to the GitHub Repository.
+> 5. New Step
 
