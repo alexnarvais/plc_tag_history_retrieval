@@ -33,8 +33,8 @@ if __name__ == '__main__':
     """PlcHistory Class
     
     If you want to see all worksheets in the excel spreadsheet to find the correct name of the worksheet, 
-    uncomment the line 39. 
-    Line 41 utilizes a class property call work_sheet that'll be set to the first worksheet in the list of worksheets.
+    uncomment print(ogw_history.work_sheet). 
+    PlcHistory.work_sheet is a property class member that'll be set to the first worksheet in the list of worksheets.
     """
 
     ogw_history = PlcHistory(file_path)
