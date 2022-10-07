@@ -11,7 +11,6 @@ class PlcHistory:
     Author: Alex Narvais
     Version: 1
     Date: 05-Oct-20222
-    ECO: 2022-012
     Change: Initial code.
     """
 
