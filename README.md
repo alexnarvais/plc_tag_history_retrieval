@@ -8,7 +8,8 @@ samples of data for history collection. A excel spreadsheet is used to setup the
 to the PLC. The spreadsheet is also used to define the PLC tag array names that the python program will use to read the sampled data.
 An Excel spreadsheet with the name **tag_history.xlsx** is included in the program root directory and will need to be used to show 
 the proper setup that the program expects. The number and name of PLC tags is based on the PLC where the tags are created.
-The cell location and the data it contains in the spreadsheet is what's important for successful program excecution. 
+The cell location and the data it contains in the spreadsheet is what's important for successful program execution.
+
 ## Third Party Python Modules
 ```python
 # plc_history.py
