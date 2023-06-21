@@ -85,11 +85,10 @@ class PlcHistory:
                     print(f"Plc tag '{tag}' doesn't exist!!!\n")
                     failed_tag_count += 1
                     plc_tags_value_list.append(["Error" for _ in range(0, 2000)])
+            print(f"{failed_tag_count} of {len(plc_tags_name_list)} tags failed during processing!")
+            print(f"{passed_tag_count} of {len(plc_tags_name_list)} tags processed successfully!")
         except PycommError as e:
             print(e)
-
-        print(f"{failed_tag_count} of {len(plc_tags_name_list)} tags failed during processing!")
-        print(f"{passed_tag_count} of {len(plc_tags_name_list)} tags processed successfully!")
 
         return list(map(list, zip(*plc_tags_value_list)))
 
