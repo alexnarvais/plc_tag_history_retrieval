@@ -10,8 +10,6 @@ if __name__ == '__main__':
     https://github.com/Site-Automation/plc_tag_history_retrieval.git
     """
 
-    file_path = filedialog.askopenfilename()
-
     """PlcHistory Class
 
     If you want to see all worksheets in the excel spreadsheet to find the correct name of the worksheet, 
@@ -19,17 +17,19 @@ if __name__ == '__main__':
     first worksheet from list of worksheets by default.
     """
 
-    plc_history = PlcHistory(file_path)
-    # print(plc_history.work_sheet)
-    plc_history.work_sheet = plc_history.work_sheet[0]
-    start_time = datetime.now()
-    plc_tag_names_list = plc_history.plc_tag_names()
+    file_path = filedialog.askopenfilename()
 
-    if plc_tag_names_list:
+    if file_path.lower().endswith(("xlsx", "xlsm", "xls", "xlw")):
+        start_time = datetime.now()
+        plc_history = PlcHistory(file_path)
+        # print(plc_history.work_sheet)
+        plc_history.work_sheet = plc_history.work_sheet[0]  # Default to the first worksheet in the workbook.
+        plc_tag_names_list = plc_history.plc_tag_names()
         plc_tag_values_list = plc_history.plc_tag_values(plc_tag_names_list)
         excel_write = plc_history.write_tag_values_wb(plc_tag_values_list)
         end_time = datetime.now()
         plc_history.write_exec_time_wb(start_time, end_time)
         system(f'start EXCEL.EXE "{file_path}"')
     else:
-        print("There are no plc tag names defined, please check the configuration file?")
+        print("The file type isn't an Excel file format, check the file that was selected?")
+
